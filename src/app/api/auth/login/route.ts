@@ -3,7 +3,7 @@ import connectDB from "@/lib/db";
 import { User } from "@/lib/model/user.model";
 import { createToken } from "@/utils/token_helper";
 import { type NextRequest, NextResponse } from "next/server";
-import bcrypt from "bcrypt";
+import bcrypt from "bcryptjs";
 
 export async function POST(request: NextRequest) {
   try {

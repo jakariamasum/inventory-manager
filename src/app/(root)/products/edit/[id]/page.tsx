@@ -129,11 +129,7 @@ const EditProduct = ({ params }: { params: { id: string } }) => {
                 </CardDescription>
               </CardHeader>
               <CardContent>
-                <InventoryForm
-                  onSubmit={onSubmit}
-                  defaultValues={product}
-                  resolver={zodResolver(updateProductSchema)}
-                >
+                <InventoryForm onSubmit={onSubmit} defaultValues={product}>
                   {/* Product Name */}
                   <div className="space-y-2">
                     <Label htmlFor="name">Product Name *</Label>
